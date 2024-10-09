@@ -1,0 +1,264 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Gilroy";
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+}
+
+#main{
+    width: 100%;
+    height: 100%;
+    /* background-color: red; */
+}
+
+#nav{
+    height: 70px;
+    width: 100%;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 40px;
+}
+
+#nav-part1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2px;
+}
+
+#nav-part2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+#nav-part2 h4{
+    font-size: 16px;
+    font-weight: 600;
+}
+
+#nav h5{
+    display: none;
+}
+
+#nav-part2 h4 span{
+    color: rgb(104, 104, 105);
+    margin-left: 25px;
+}
+
+.gola{
+    width: 22px;
+    height: 22px;
+    background-color: black;
+    border-radius: 50%;
+}
+
+#nav2{
+    width: 100%;
+    height: 60px;
+    /* background-color: aquamarine; */
+    display: flex;
+    align-items: center;
+    gap: 70px;
+    padding: 0 40px;
+}
+
+#nav2 h3{
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 600;
+    
+}
+
+#content{
+    height: calc(100% - 130px);
+    width: 100%;
+    /* background-color: brown; */
+}
+
+#text-content{
+    width: 100%;
+    height: 40%;
+    /* background-color: burlywood; */
+    display: flex;
+    overflow-x: scroll;
+}
+
+#text-content::-webkit-scrollbar{
+    /* display: none; */
+    background-color: transparent;
+    height: 7px;
+}
+
+#text-content::-webkit-scrollbar-thumb{
+    background-color: orangered;
+}
+
+.elem{
+    flex-shrink: 0;
+    width: 60%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.elem h1{
+    /* font-size: 110px; */
+    font-size: 7vw;
+    font-weight: 300;
+}
+
+#image-content{
+    width: 100%;
+    height: 60%;
+    background-color: purple;
+    display: flex;
+    overflow-x: auto;
+}
+
+#image-content::-webkit-scrollbar{
+    display: none;
+}
+#image-content img{
+    flex-shrink: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@media (max-width:600px) {
+    #nav{
+        height: 60px;
+        /* background-color: red; */
+        padding: 0 25px;
+    }
+    
+    #nav-part1{
+        gap:0px;
+    }
+
+    #nav-part2{
+        gap: 40px;
+        align-items: center;
+    }
+    
+    #nav-part2 h4{
+        font-size: 13px;
+        font-weight: 600;
+        display: none;
+    }
+    
+    #nav-part2 h4:nth-child(1){
+        display: initial;
+        margin-right: 25px;
+    }
+
+    #nav h5{
+        display: initial;
+    }
+
+    #nav h5 i{
+        font-size: 20px;
+        font-weight: 700;
+    }
+    #nav-part2 h4 span{
+        color: rgb(104, 104, 105);
+        margin-left: 10px;
+    }
+    
+    .gola{
+        width: 16px;
+        height: 16px;
+        background-color: black;
+        border-radius: 50%;
+    }
+
+    #nav2{
+        width: 100%;
+        height: 50px;
+        /* background-color: aquamarine; */
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 10px;
+        padding: 0 25px;
+    }
+    
+    #nav2 h3{
+        font-size: 2.5vw;
+        text-transform: uppercase;
+        font-weight: 600;
+        color: #6a6a6a;
+        
+    }
+
+    #content{
+        height: calc(100% - 110px);
+        width: 100%;
+        /* background-color: brown; */
+    }
+    
+    #text-content{
+        width: 100%;
+        height: 33%;
+        /* background-color: burlywood; */
+        display: flex;
+        overflow-x: scroll;
+    }
+    
+    #text-content::-webkit-scrollbar{
+        /* display: none; */
+        background-color: transparent;
+        height: 4px;
+    }
+    
+    #text-content::-webkit-scrollbar-thumb{
+        background-color: orangered;
+    }
+    
+    .elem{
+        flex-shrink: 0;
+        width: fit-content;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 20px;
+    }
+    
+    .elem h1{
+        /* font-size: 110px; */
+        font-size: 24vw;
+        white-space:nowrap;
+        font-weight: 300;
+    }
+    
+    #image-content{
+        width: 100%;
+        height: 65%;
+        background-color: purple;
+        display: flex;
+        overflow-x: auto;
+    }
+    
+    #image-content::-webkit-scrollbar{
+        display: none;
+    }
+
+    #image-content img{
+        flex-shrink: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+}
